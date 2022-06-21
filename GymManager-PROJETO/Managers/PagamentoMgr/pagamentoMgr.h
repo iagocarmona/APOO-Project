@@ -1,5 +1,6 @@
 #pragma once
-#include "../Controllers/pagamentoController.h"
+
+#include "../../Controllers/pagamentoController.h"
 
 class PagamentoMgr {
     PagamentoController* pagamentoController;

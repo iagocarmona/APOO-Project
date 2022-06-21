@@ -1,7 +1,8 @@
 #pragma once
+
 #include <string>
-#include "../TAD/DataTAD/data.h"
-#include "../TAD/TelefoneTAD/telefone.h"
+#include "../../TAD/DataTAD/data.h"
+#include "../../TAD/TelefoneTAD/telefone.h"
 
 using namespace std;
 

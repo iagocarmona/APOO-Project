@@ -1,8 +1,9 @@
 #pragma once
+
 #include <string>
 #include "../Aluno/aluno.h"
 #include "../Treino/treino.h"
-#include "../Enum/tipoTreino.h"
+#include "../../Enum/tipoTreino.h"
 
 using namespace std;
 

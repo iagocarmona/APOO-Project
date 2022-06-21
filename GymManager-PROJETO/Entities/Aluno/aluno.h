@@ -1,7 +1,7 @@
 #pragma once
-#include "../DAO/AlunoDAO/alunoDAO.h"
+
 #include "../Usuario/usuario.h"
-#include "../Enum/statusPagamento.h"
+#include "../../Enum/statusPagamento.h"
 
 using namespace std;
 

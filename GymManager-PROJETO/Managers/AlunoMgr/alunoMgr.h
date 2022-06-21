@@ -1,6 +1,7 @@
 #pragma once
-#include "../Entities/Aluno/aluno.h"
-#include "../DAO/AlunoDAO/alunoDAO.h"
+
+#include "../../Entities/Aluno/aluno.h"
+#include "../../DAO/AlunoDAO/alunoDAO.h"
 
 using namespace std;
 

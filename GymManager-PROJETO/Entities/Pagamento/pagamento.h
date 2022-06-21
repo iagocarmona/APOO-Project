@@ -1,7 +1,7 @@
 #pragma once 
-#include "../TAD/DataTAD/data.h"
-#include "../Entities/Aluno/aluno.h"
-#include "../Controllers/pagamentoController.h"
+
+#include "../Aluno/aluno.h"
+#include "../../TAD/DataTAD/data.h"
 
 class Pagamento {
     int valorAPagar;

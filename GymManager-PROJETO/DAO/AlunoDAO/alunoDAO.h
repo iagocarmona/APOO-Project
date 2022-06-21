@@ -1,12 +1,14 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "../Entities/Aluno/aluno.h"
+#include "../../Entities/Aluno/aluno.h"
 
 using namespace std;
 
 class AlunoDAO {
     Aluno* aluno;
+    Aluno alunosVector[200];
+    int alunoCounter = 0;
 
     public:
         void setAluno(Aluno* aluno);

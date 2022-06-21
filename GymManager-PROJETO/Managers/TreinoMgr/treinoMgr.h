@@ -1,6 +1,7 @@
 #pragma once
-#include "../Entities/Treino/treino.h"
-#include "../DAO/TreinoDAO/treinoDAO.h"
+
+#include "../../Entities/Treino/treino.h"
+#include "../../DAO/TreinoDAO/treinoDAO.h"
 
 
 class TreinoMgr {

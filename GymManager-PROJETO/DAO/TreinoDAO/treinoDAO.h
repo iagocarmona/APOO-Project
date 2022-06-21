@@ -1,6 +1,6 @@
 #pragma once
-#include "../Entities/Treino/treino.h"
-#include "../Entities/Treino/treino.h"
+
+#include "../../Entities/Treino/treino.h"
 
 class TreinoDAO {
     Treino* treino;

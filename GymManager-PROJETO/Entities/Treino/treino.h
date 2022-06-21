@@ -1,7 +1,7 @@
 #pragma once
+
 #include <string>
-#include "../DAO/TreinoDAO/treinoDAO.h"
-#include "../TAD/DataTAD/data.h"
+#include "../../TAD/DataTAD/data.h"
 
 using namespace std;
 

@@ -1,4 +1,10 @@
     #include "data.h"
+
+    Data::Data(int dia, int mes, int ano){
+        this->setDia(dia);
+        this->setMes(mes);
+        this->setAno(ano);
+    }
     
     void Data::setDia(int dia){
         this->dia = dia;

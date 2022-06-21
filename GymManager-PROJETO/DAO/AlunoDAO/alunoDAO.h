@@ -8,9 +8,11 @@ using namespace std;
 class AlunoDAO {
     Aluno* aluno;
     Aluno alunosVector[200];
-    int alunoCounter = 0;
+    int alunoCounter;
 
     public:
+        AlunoDAO();
+
         void setAluno(Aluno* aluno);
         Aluno* getAluno();
 

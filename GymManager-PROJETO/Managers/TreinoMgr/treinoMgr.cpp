@@ -1,5 +1,9 @@
 #include "treinoMgr.h"
 
+    TreinoMgr::TreinoMgr(TreinoDAO* treinoDAO){
+        this->setTreinoDAO(treinoDAO);
+    }
+
     void TreinoMgr::setTreinoDAO(TreinoDAO* treinoDAO){
         this->treinoDAO = treinoDAO;
     }

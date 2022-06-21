@@ -21,6 +21,7 @@ all:
 	g++ -g -c TAD/TelefoneTAD/telefone.cpp
 	g++ -g -c main.cpp
 	g++ -o main *.o
+	./main
 
 clear:
 	rm ./*.o

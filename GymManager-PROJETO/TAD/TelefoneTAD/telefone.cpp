@@ -1,5 +1,11 @@
 #include "telefone.h"
 
+    Telefone::Telefone(int codPais, int codCidade, int numLocal){
+        this->setCodPais(codPais);
+        this->setCodCidade(codCidade);
+        this->setNumLocal(numLocal);
+    }
+
     void Telefone::setCodPais(int codPais){
         this->codPais = codPais;
     }

@@ -8,6 +8,8 @@ class TreinoMgr {
     TreinoDAO* treinoDAO;
 
     public:
+        TreinoMgr(TreinoDAO* treinoDAO);
+
         void setTreinoDAO(TreinoDAO* );
         TreinoDAO* getTreinoDAO();
 

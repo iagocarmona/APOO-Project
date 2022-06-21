@@ -24,10 +24,10 @@ class Pessoa {
         string getNome();
         void setSobrenome(string );
         string getSobrenome();
-        void setDataNascimento(Data );
+        void setDataNascimento(Data* );
         Data getDataNascimento();
         void setEmail(string );
         string getEmail();
-        void setTelefone(Telefone );
+        void setTelefone(Telefone* );
         Telefone getTelefone();
 };

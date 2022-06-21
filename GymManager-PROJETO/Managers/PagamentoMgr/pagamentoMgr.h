@@ -6,6 +6,8 @@ class PagamentoMgr {
     PagamentoController* pagamentoController;
 
     public:
+        PagamentoMgr(PagamentoController* pagamentoController);
+
         void setPagamentoController(PagamentoController* );
         PagamentoController* getPagamentoController();
 

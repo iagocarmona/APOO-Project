@@ -9,6 +9,8 @@ class AlunoMgr {
     AlunoDAO* alunoDAO;
 
     public:
+        AlunoMgr(AlunoDAO* alunoDAO);
+
         void setAlunoDAO(AlunoDAO* );
         AlunoDAO* getAlunoDAO();
 

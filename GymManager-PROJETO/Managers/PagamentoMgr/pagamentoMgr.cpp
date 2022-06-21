@@ -1,5 +1,9 @@
 #include "pagamentoMgr.h"
 
+    PagamentoMgr::PagamentoMgr(PagamentoController* pagamentoController){
+        this->setPagamentoController(pagamentoController);
+    }
+
     void PagamentoMgr::setPagamentoController(PagamentoController* pagamentoController){
         this->pagamentoController = pagamentoController;
     }

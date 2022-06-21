@@ -1,5 +1,9 @@
 #include "alunoMgr.h"
 
+    AlunoMgr::AlunoMgr(AlunoDAO* alunoDAO){
+        this->setAlunoDAO(alunoDAO);
+    }
+
     void AlunoMgr::setAlunoDAO(AlunoDAO* alunoDAO){
         this->alunoDAO = alunoDAO;
     }

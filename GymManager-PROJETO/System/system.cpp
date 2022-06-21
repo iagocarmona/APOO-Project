@@ -4,6 +4,12 @@
 
 using namespace std;
 
+    System::System(AlunoMgr* alunoMgr, PagamentoMgr* pagamentoMgr, TreinoMgr* treinoMgr){
+        this->setAlunoMgr(alunoMgr);
+        this->setPagamentoMgr(pagamentoMgr);
+        this->setTreinoMgr(treinoMgr);
+    }
+
     void System::setAlunoMgr(AlunoMgr* alunoMgr){
         this->alunoMgr = alunoMgr;
     }
@@ -24,6 +30,7 @@ using namespace std;
     }
 
     bool System::cadastrarAluno(){
+        cout << "Cadastrar aluno...";
         if(this->alunoMgr->cadastrarAluno() == true){
             return true;
         }

@@ -11,6 +11,8 @@ class System {
     TreinoMgr* treinoMgr;
 
     public:
+        System(AlunoMgr* alunoMgr, PagamentoMgr* pagamentoMgr, TreinoMgr* treinoMgr);
+        
         void setAlunoMgr(AlunoMgr* );
         AlunoMgr* getAlunoMgr();
         void setPagamentoMgr(PagamentoMgr* );

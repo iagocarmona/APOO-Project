@@ -24,8 +24,8 @@
     string Pessoa::getSobrenome(){
         return this->sobrenome;
     }
-    void Pessoa::setDataNascimento(Data dataNascimento){
-        this->dataNascimento = dataNascimento;
+    void Pessoa::setDataNascimento(Data* dataNascimento){
+        this->dataNascimento = *dataNascimento;
     }
     Data Pessoa::getDataNascimento(){
         return this->dataNascimento;
@@ -36,8 +36,8 @@
     string Pessoa::getEmail(){
         return this->email;
     }
-    void Pessoa::setTelefone(Telefone telefone){
-        this->telefone = telefone;
+    void Pessoa::setTelefone(Telefone* telefone){
+        this->telefone = *telefone;
     }
     Telefone Pessoa::getTelefone(){
         return this->telefone;

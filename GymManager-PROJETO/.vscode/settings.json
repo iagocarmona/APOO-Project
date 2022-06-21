@@ -1,0 +1,21 @@
+{
+  "makefile.extensionOutputFolder": "./.vscode",
+  "files.associations": {
+    "*.tcc": "cpp"
+  },
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "ProjectConnection",
+      "database": "myproject",
+      "username": "root",
+      "password": "password"
+    }
+  ]
+}

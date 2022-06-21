@@ -1,0 +1,1 @@
+enum TipoTreino {MAUYTHAI, BOXE, MAUYTHAI_E_BOXE};

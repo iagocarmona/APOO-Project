@@ -1,0 +1,1 @@
+enum StatusPagamento{PENDENDTE, PAGO};

@@ -4,7 +4,7 @@
 
 class TreinoDAO {
     Treino* treino;
-    Treino* treinosVector[200];
+    Treino** treinosVector;
 
     public:
         void setTreino(Treino* treino);

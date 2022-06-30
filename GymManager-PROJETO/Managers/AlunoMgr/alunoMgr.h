@@ -16,7 +16,7 @@ class AlunoMgr {
 
         //true: Aluno cadastrado com sucesso!
         //false: Ocorreu uma falha no cadastro...
-        bool cadastrarAluno();
+        bool cadastrarAluno(Aluno* );
 
         //Em caso de sucesso é retornado um ponteiro para o aluno filtrado.
         //Em caso de falha, retorna NULL.

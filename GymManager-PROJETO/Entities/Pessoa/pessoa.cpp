@@ -1,5 +1,11 @@
     #include "pessoa.h"
 
+    #include <iostream>
+
+    Pessoa::Pessoa(){
+        std::cout << "Pessoa";
+    }
+
     void Pessoa::setCPF(string cpf){
         this->cpf = cpf;
     }
@@ -25,9 +31,9 @@
         return this->sobrenome;
     }
     void Pessoa::setDataNascimento(Data* dataNascimento){
-        this->dataNascimento = *dataNascimento;
+        this->dataNascimento = dataNascimento;
     }
-    Data Pessoa::getDataNascimento(){
+    Data* Pessoa::getDataNascimento(){
         return this->dataNascimento;
     }
     void Pessoa::setEmail(string email){
@@ -37,8 +43,8 @@
         return this->email;
     }
     void Pessoa::setTelefone(Telefone* telefone){
-        this->telefone = *telefone;
+        this->telefone = telefone;
     }
-    Telefone Pessoa::getTelefone(){
+    Telefone* Pessoa::getTelefone(){
         return this->telefone;
     }

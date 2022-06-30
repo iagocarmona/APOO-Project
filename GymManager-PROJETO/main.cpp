@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 
 // Including my System
@@ -17,15 +15,23 @@
 // Including Controller
 #include "Controllers/pagamentoController.h"
 
+// Including Aluno
+#include "Entities/Aluno/aluno.h"
+#include "Entities/Pessoa/pessoa.h"
+#include "Entities/Usuario/usuario.h"
+
+// Including TAD
+#include "TAD/DataTAD/data.h"
+#include "TAD/TelefoneTAD/telefone.h"
+
+// Including Enum
+#include "Enum/enum.h"
+
 using namespace std;
 
 int main(){ 
 
-    cout << "=============================\n";
-    cout << "|        Gym System         |\n"; 
-    cout << "=============================\n";
-
-    AlunoDAO* alunoDAO = new AlunoDAO();
+    AlunoDAO* alunoDAO;
     TreinoDAO* treinoDAO = new TreinoDAO();
     PagamentoController* pagamentoController = new PagamentoController();
 
@@ -35,11 +41,33 @@ int main(){
 
     System* system = new System(alunoMgr, pagamentoMgr, treinoMgr);
 
-    if(system->cadastrarAluno()){
+    Pessoa* pessoa;
+
+    pessoa->setCPF("11800419929");
+    pessoa->setRG("143807861");
+    pessoa->setNome("Iago");
+    pessoa->setSobrenome("Carmona");
+    Data* data = new Data(25,3,2002);
+    pessoa->setDataNascimento(data);
+    pessoa->setEmail("iagoortegacarmona@gmail.com");
+    Telefone* telefone = new Telefone(55,44,984114130);
+    pessoa->setTelefone(telefone);
+
+    Usuario* usuario = new Usuario(pessoa);
+
+    usuario->setLogin("iago");
+    usuario->setSenha("123123");
+
+    Aluno* aluno;
+
+    Data* dataVencimento = new Data(29,7,2022);
+
+    aluno->setStatusPagamento(PENDENTE);
+    aluno->setVencimento(dataVencimento);
+
+    if(system->cadastrarAluno(aluno) == true){
         cout << "Aluno cadastrado com sucesso!";
-    }else {
-        cout << "Ocorreu uma falha no cadastro!";
-    }
+    }else cout << "Ocorreu uma falha ao cadastrar aluno.";
 
     cout << "\n";
 

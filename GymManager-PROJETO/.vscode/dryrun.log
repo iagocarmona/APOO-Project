@@ -1,5 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/iago/Área de Trabalho/APOO/Projeto/GymManager-PROJETO'
-make: 'all' is up to date.
-make: Leaving directory '/home/iago/Área de Trabalho/APOO/Projeto/GymManager-PROJETO'
- 

@@ -8,10 +8,10 @@
         return this->statusPagamento;
     }
 
-    void Aluno::setVencimento(string vencimento) {
+    void Aluno::setVencimento(Data* vencimento) {
         this->vencimento = vencimento;
     }
 
-    string Aluno::getVencimento(){
+    Data* Aluno::getVencimento(){
         return this->vencimento;
     }

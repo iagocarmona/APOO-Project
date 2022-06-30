@@ -1,5 +1,9 @@
 #include "usuario.h"
 
+    Usuario::Usuario(Pessoa* pessoa){
+        this->setPessoa(pessoa);
+    }
+
     void Usuario::setPessoa(Pessoa* pessoa){
         this->pessoa = pessoa;
     }

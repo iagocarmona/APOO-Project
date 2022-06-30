@@ -11,11 +11,12 @@ class Pessoa {
     string rg;
     string nome;
     string sobrenome;
-    Data dataNascimento;
+    Data* dataNascimento;
     string email;
-    Telefone telefone;
+    Telefone* telefone;
 
-    public: 
+    public:
+        Pessoa();
         void setCPF(string );
         string getCPF();
         void setRG(string );
@@ -25,9 +26,9 @@ class Pessoa {
         void setSobrenome(string );
         string getSobrenome();
         void setDataNascimento(Data* );
-        Data getDataNascimento();
+        Data* getDataNascimento();
         void setEmail(string );
         string getEmail();
         void setTelefone(Telefone* );
-        Telefone getTelefone();
+        Telefone* getTelefone();
 };

@@ -7,7 +7,7 @@ using namespace std;
 
 class AlunoDAO {
     Aluno* aluno;
-    Aluno alunosVector[200];
+    Aluno** alunosVector;
     int alunoCounter;
 
     public:
@@ -16,7 +16,7 @@ class AlunoDAO {
         void setAluno(Aluno* aluno);
         Aluno* getAluno();
 
-        bool cadastrar();
+        bool cadastrar(Aluno* );
         void listar();
         bool atualizar(string tipo);
         bool remover(string cpf);

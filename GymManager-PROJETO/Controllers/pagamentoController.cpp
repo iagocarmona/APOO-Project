@@ -4,12 +4,12 @@
 
     }
     Pagamento* PagamentoController::getPagamento(){
-
+        return NULL;
     }
 
     bool PagamentoController::verificar(){
-
+        return false;
     }
     bool PagamentoController::realizar(){
-        
+        return false;
     }

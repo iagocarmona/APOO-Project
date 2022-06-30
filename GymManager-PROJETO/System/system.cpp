@@ -29,9 +29,8 @@ using namespace std;
         return this->treinoMgr;
     }
 
-    bool System::cadastrarAluno(){
-        cout << "Cadastrar aluno...";
-        if(this->alunoMgr->cadastrarAluno() == true){
+    bool System::cadastrarAluno(Aluno* aluno){
+        if(this->alunoMgr->cadastrarAluno(aluno) == true){
             return true;
         }
         return false;

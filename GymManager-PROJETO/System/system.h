@@ -22,7 +22,7 @@ class System {
             
         // true: Aluno cadastrado com sucesso!
         // false: Ocorreu uma falha no cadastro...
-        bool cadastrarAluno();
+        bool cadastrarAluno(Aluno* );
 
         // Em caso de sucesso retorna um ponteiro para o aluno procurado.
         // Em caso de falha, retorna NULL.

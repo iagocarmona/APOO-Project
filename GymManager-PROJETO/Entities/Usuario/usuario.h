@@ -10,6 +10,8 @@ class Usuario {
     string senha;
 
     public:
+        Usuario(Pessoa* );
+
         void setPessoa(Pessoa* );
         Pessoa* getPessoa();
         void setLogin(string );

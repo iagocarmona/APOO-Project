@@ -3,7 +3,7 @@
 #include <string>
 #include "../Aluno/aluno.h"
 #include "../Treino/treino.h"
-#include "../../Enum/tipoTreino.h"
+#include "../../Enum/enum.h"
 
 using namespace std;
 

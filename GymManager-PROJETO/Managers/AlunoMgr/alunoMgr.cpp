@@ -11,8 +11,8 @@
         return this->alunoDAO;
     }
 
-    bool AlunoMgr::cadastrarAluno(){
-        if(this->alunoDAO->cadastrar() == true){
+    bool AlunoMgr::cadastrarAluno(Aluno* aluno){
+        if(this->alunoDAO->cadastrar(aluno) == true){
             return true;
         }
         return false;

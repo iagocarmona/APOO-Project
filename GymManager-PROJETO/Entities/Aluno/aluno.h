@@ -1,17 +1,18 @@
 #pragma once
 
 #include "../Usuario/usuario.h"
-#include "../../Enum/statusPagamento.h"
+#include "../../Enum/enum.h"
+#include "../../TAD/DataTAD/data.h"
 
 using namespace std;
 
 class Aluno: public Usuario{
     StatusPagamento statusPagamento;
-    string vencimento;
+    Data* vencimento;
 
     public: 
         void setStatusPagamento(StatusPagamento );
         StatusPagamento getStatusPagamento();
-        void setVencimento(string );
-        string getVencimento();
+        void setVencimento(Data* );
+        Data* getVencimento();
 };

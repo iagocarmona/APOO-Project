@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/iago/Área de Trabalho/APOO/Projeto'
+make: Leaving directory '/home/iago/Área de Trabalho/APOO/Projeto'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
